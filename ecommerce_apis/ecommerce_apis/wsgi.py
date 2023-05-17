@@ -1,5 +1,5 @@
 """
-WSGI config for desarrollo_apis project.
+WSGI config for ecommerce_apis project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'desarrollo_apis.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ecommerce_apis.settings')
 
 application = get_wsgi_application()
