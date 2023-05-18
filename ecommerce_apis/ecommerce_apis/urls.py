@@ -19,6 +19,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', TemplateView.as_view(template_name='base/home.html'), name='home'),
     path('api/v1/', include('ecommerce_apis.router')),
 ]

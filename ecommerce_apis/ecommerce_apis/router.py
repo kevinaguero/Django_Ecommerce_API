@@ -1,6 +1,7 @@
 
 from rest_framework import routers
 from apps.producto import api as api_producto
+from apps.orden import api as api_orden
 # from apps.producto.api import ProductoViewSet
 # from apps.programa import api as api_programa
 
@@ -11,10 +12,9 @@ from apps.producto import api as api_producto
 router = routers.DefaultRouter()
 
 # Registrar los ViewSet
-router.register('producto', api_producto.ProductoViewSet, 'producto')
-# router.register('estado-salud', api_persona.EstadoSaludViewSet)
-# router.register('programa', api_programa.ProgramaViewSet)
-# router.register('asignacion-beneficio', api_programa.AsignacionBeneficioViewSet)
+router.register('producto', api_producto.ProductoViewSet)
+router.register('orden', api_orden.OrdenViewSet)
+router.register('detalle_orden', api_orden.DetalleOrdenViewSet)
 
 
 # urlpatterns = [
