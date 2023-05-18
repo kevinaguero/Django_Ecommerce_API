@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'apps.producto',
+    'apps.orden',
 ]
 
 MIDDLEWARE = [
@@ -75,9 +77,11 @@ WSGI_APPLICATION = 'ecommerce_apis.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": 'ecommerce',
+        "USER": 'postgres',
+        "PASSWORD": 'Player8744',
     }
 }
 
